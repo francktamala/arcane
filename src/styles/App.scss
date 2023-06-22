@@ -6,6 +6,10 @@ $black: #081626;
 $primary: #35bdf2;
 $accent: #f24e6e;
 
+html, body, .App, .App-home {
+    transition: 1s;
+}
+
 .App {
   padding: 10px 120px;
 }
@@ -108,4 +112,53 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   transition: 1s;
   background: $black;
+}
+
+
+@media (max-width: 1200px) {
+    .App {
+        padding: 10px 60px !important;
+      }
+
+      .App-home{
+        padding: 40px 60px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .Logo{
+        width: 200px;    
+    }
+    
+    .App {
+        padding: 10px 30px !important;
+      }
+
+      .App-home{
+        padding: 40px 30px !important;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+}
+
+@media (max-width: 470px) {
+
+    .Logo{
+        width: 150px;    
+    }
+    
+
+    h1 {
+        font-size: 1.5rem;
+      }
+      
+      h2 {
+        font-size: 1.3rem;
+      }
 }

@@ -8,7 +8,7 @@ function Header({ active }) {
     return (
         <nav class="navbar navbar-expand-lg header App">
             <div class="container-fluid">
-                <Link class="navbar-brand" to="#">
+                <Link class="navbar-brand" to="/">
                     <img src={IMG.Logo} alt="Logo" class="d-inline-block align-text-top Logo" />
                 </Link>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

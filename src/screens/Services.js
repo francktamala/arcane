@@ -12,7 +12,7 @@ export default function Services() {
                 <h1 className="txt-White" style={{ textAlign: 'center' }}>Our Services</h1>
                 <br />
                 <div className="row">
-                    <div className="col-4">
+                    <div className="col-lg-4 col-md-6" style={{marginBottom: 30}}>
                         <div className="service-card">
                             <h3 className="txt-White">Some Title Here</h3>
                             <h5 className="txt-White">
@@ -20,7 +20,7 @@ export default function Services() {
                             </h5>
                         </div>
                     </div>
-                    <div className="col-4">
+                    <div className="col-lg-4 col-md-6" style={{marginBottom: 30}}>
                         <div className="service-card">
                             <h3 className="txt-White">Some Title Here</h3>
                             <h5 className="txt-White">
@@ -28,7 +28,7 @@ export default function Services() {
                             </h5>
                         </div>
                     </div>
-                    <div className="col-4">
+                    <div className="col-lg-4 col-md-6" style={{marginBottom: 30}}>
                         <div className="service-card">
                             <h3 className="txt-White">Some Title Here</h3>
                             <h5 className="txt-White">
@@ -37,8 +37,8 @@ export default function Services() {
                         </div>
                     </div>
                 </div>
-                <br />
-                <br />
+                {/* <br /> */}
+                {/* <br /> */}
             </div>
         </>
     )
