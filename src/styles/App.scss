@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&display=swap");
+
+$secondary: #03318c;
+$black: #081626;
+// $secondary: #168BF2;
+$primary: #35bdf2;
+$accent: #f24e6e;
+
+.App {
+  padding: 10px 120px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 2;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.txt-White {
+  color: #fff;
+}
+
+.txt-Accent {
+  color: $accent;
+}
+
+.txt-black {
+  color: $black;
+}
+
+.txt-Primary {
+  color: $primary;
+}
+
+.txt-Secondary {
+  color: $secondary;
+}
+
+.btn {
+  transition: 1s ease-in-out !important;
+  font-size: 0.9rem !important;
+  font-weight: bold;
+}
+
+.btn-outline-primary {
+  border-color: $primary !important;
+  color: $primary !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: $black !important;
+}
+
+// SCROLLBAR
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  transition: 1s;
+  background: $accent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  transition: 1s;
+  background: $black;
+}

@@ -1,0 +1,12 @@
+@use "./App.scss" as *;
+
+
+.Contact-Container{
+    width: 90%;
+    margin: -40px auto 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.5);
+}
+

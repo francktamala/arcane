@@ -1,0 +1,23 @@
+@use "./App.scss" as *;
+
+.header{
+    background-color: $black !important;
+    box-shadow: 0px 0px 15px rgba(0,0,0, 0.5);
+}
+
+.nav-link{
+    color: $primary !important;
+    transition: 1s;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.nav-link:hover, .active{
+    color: $accent !important;
+}
+
+.Logo{
+    width: 250px;    
+}
+
