@@ -1,4 +1,5 @@
-import { Navbar } from '../components';
+import { Navbar, ServiceCard } from '../components';
+import { SERVICES } from '../constants';
 import '../styles/home.scss';
 import {
     Link
@@ -12,9 +13,9 @@ function Home() {
                 <div className="App-home">
                     <div className="row">
                         <div className="col-lg-8 col-md-8">
-                            <h1 className="txt-White">Some Title Here</h1>
+                            <h1 className="txt-White">The Fast Moving World!</h1>
                             <h5 className="txt-White">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                In today's world that is changing so quickly, innovation and rethinking how to do business are essential components for remaining competitive and relevant. Businesses need to have a forward-thinking mindset and be open to exploring new ideas and ways if they are to embrace these notions.
                             </h5>
                         </div>
                         <div className="col-lg-4 col-md-4"></div>
@@ -34,30 +35,13 @@ function Home() {
                 </div>
                 <br />
                 <div className="row">
-                    <div className="col-lg-4 col-md-6" style={{marginBottom: 30}}>
-                        <div className="service-card">
-                            <h3 className="txt-black">Some Title Here</h3>
-                            <h5 className="txt-black">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                            </h5>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6" style={{marginBottom: 30}}>
-                        <div className="service-card">
-                            <h3 className="txt-black">Some Title Here</h3>
-                            <h5 className="txt-black">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                            </h5>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6" style={{marginBottom: 30}}>
-                        <div className="service-card">
-                            <h3 className="txt-black">Some Title Here</h3>
-                            <h5 className="txt-black">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                            </h5>
-                        </div>
-                    </div>
+                    {SERVICES.map((item, index) => {
+                        if (index < 3)
+                            return <ServiceCard key={index} {...{ ...item, isDark: false }} />
+                        else
+                            return null;
+                    })}
+
                 </div>
             </div>
             {/* <br /> */}
