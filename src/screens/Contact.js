@@ -41,7 +41,7 @@ export default function Contact() {
                         <br />
                         <br />
                         <h5 className="txt-black">Please send us an email, we'd love to hear from you.</h5>
-                        <a className="nav-item" href="mailto:Info@arcana-analytics.co.za" ><h5>Info@arcana-analytics.co.za</h5></a>
+                        <a className="nav-item" href="mailto:Info@arcaneanalytics.co.za" ><h5>Info@arcaneanalytics.co.za</h5></a>
                     </div>
                 </div>
             </div>
