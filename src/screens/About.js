@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/home.scss';
 import '../styles/about.scss';
 import { Navbar } from '../components';
 import { IMG } from '../constants';
 
 export default function About() {
+
+    useEffect(() => {
+        document.title = "About Us | Arcane Analytics"
+    }, [])
+
     return (
         <>
             <Navbar active="about" />

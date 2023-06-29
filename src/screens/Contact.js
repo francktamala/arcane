@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/contact.scss';
 import '../styles/about.scss';
 import '../styles/header.scss';
@@ -7,6 +7,11 @@ import { IMG } from '../constants';
 import Icon from 'react-google-material-icons'
 
 export default function Contact() {
+
+    useEffect(() => {
+        document.title = "Contact Us | Arcane Analytics"
+    }, [])
+
     return (
         <div style={{height: '94vh'}}>
             <Navbar active="contact" />

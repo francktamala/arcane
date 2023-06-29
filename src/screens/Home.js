@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Navbar, ServiceCard } from '../components';
 import { SERVICES } from '../constants';
 import '../styles/home.scss';
@@ -6,6 +7,11 @@ import {
 } from "react-router-dom";
 
 function Home() {
+
+    useEffect(() => {
+        document.title = "Arcane Analytics"
+    }, [])
+
     return (
         <>
             <Navbar active="home" />

@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../styles/home.scss';
 import '../styles/services.scss';
 import { Navbar, ServiceCard } from '../components';
 import { SERVICES } from '../constants';
 
 export default function Services() {
+
+    useEffect(() => {
+        document.title = "Services | Arcane Analytics"
+    }, [])
+
     return (
         <>
             <Navbar active="services" />
