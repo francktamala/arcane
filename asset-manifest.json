@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/arcane/static/css/main.879bef19.css",
-    "main.js": "/arcane/static/js/main.f15683e0.js",
+    "main.css": "/arcane/static/css/main.8b404c67.css",
+    "main.js": "/arcane/static/js/main.a261882d.js",
     "static/js/787.89506141.chunk.js": "/arcane/static/js/787.89506141.chunk.js",
     "static/media/Phone.png": "/arcane/static/media/Phone.324e8bf250c1c373139f.png",
     "static/media/Logo.png": "/arcane/static/media/Logo.5cdbac7cfd8b9d13b8c5.png",
     "static/media/mission.png": "/arcane/static/media/mission.b79ec25cc213ca0b8350.png",
     "index.html": "/arcane/index.html",
-    "main.879bef19.css.map": "/arcane/static/css/main.879bef19.css.map",
-    "main.f15683e0.js.map": "/arcane/static/js/main.f15683e0.js.map",
+    "main.8b404c67.css.map": "/arcane/static/css/main.8b404c67.css.map",
+    "main.a261882d.js.map": "/arcane/static/js/main.a261882d.js.map",
     "787.89506141.chunk.js.map": "/arcane/static/js/787.89506141.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.879bef19.css",
-    "static/js/main.f15683e0.js"
+    "static/css/main.8b404c67.css",
+    "static/js/main.a261882d.js"
   ]
 }
