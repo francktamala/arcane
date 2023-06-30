@@ -1,23 +1,32 @@
 @use "./App.scss" as *;
 
-.header{
-    background-color: $black !important;
-    box-shadow: 0px 0px 15px rgba(0,0,0, 0.5);
+.custom-toggler.navbar-toggler {
+  border-color: $primary;
+}
+/* Setting the stroke to lightblue using rgba values (53, 189, 242, 95) */
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(53, 189, 242, 95)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.nav-link{
-    color: $primary !important;
-    transition: 1s;
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-    font-weight: 400;
+.header {
+  background-color: $black !important;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
-.nav-link:hover, .active{
-    color: $accent !important;
+.nav-link {
+  color: $primary !important;
+  transition: 1s;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
-.Logo{
-    width: 250px;    
+.nav-link:hover,
+.active {
+  color: $accent !important;
 }
 
+.Logo {
+  width: 250px;
+}

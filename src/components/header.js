@@ -6,7 +6,7 @@ import {
 
 function Header({ active }) {
     return (
-        <nav class="navbar navbar-expand-lg header App">
+        <nav class="navbar navbar-expand-lg header App custom-toggler">
             <div class="container-fluid">
                 <Link class="navbar-brand" to="/">
                     <img src={IMG.Logo} alt="Logo" class="d-inline-block align-text-top Logo" />
