@@ -3,18 +3,29 @@ import '../styles/header.scss';
 import {
     Link
 } from "react-router-dom";
-import React, {useState, useEffect} from "react"
+import React, { useState, useEffect } from "react"
 
 function Header({ active }) {
 
     const [isFixed, setIsFixed] = useState(false);
+    const [oldValue, setOldValue] = useState(0)
 
     function checkIsScrolled() {
-        if (window.scrollY > 10)
+        console.log(window.scrollY, " Y")
+        if ((window.scrollY > 0) && !isFixed) {
             setIsFixed(true);
+            setOldValue(window.scrollY)
+        }
         else
-            setIsFixed(false);
+            setIsFixed(false)
     }
+
+    useEffect(() => {
+        if (isFixed) {
+            console.log(oldValue, " OLD")
+            window.scrollTo(0, oldValue + 80)
+        }
+    }, [isFixed])
 
 
     useEffect(() => {

@@ -15,7 +15,7 @@ function Home() {
     return (
         <>
             <Navbar active="home" />
-            <div className="topContainer">
+            <div className="topContainer below-nav">
                 <div className="App-home">
                     <div className="row">
                         <div className="col-lg-8 col-md-8">
