@@ -1,34 +1,40 @@
 @use "./App.scss" as *;
 
 @mixin gradient-container {
-    width: 100%;
-    background-image: linear-gradient(to right, $black, $accent, $black);
+  width: 100%;
+  background-image: linear-gradient(to right, $bg, $bg, $bg);
+  // background-image: linear-gradient(to right, $black, $accent, $black);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
-.topContainer{
-    @include gradient-container;
-    border-radius: 0 0 60px 0;
+.topContainer {
+  @include gradient-container;
+  border-radius: 0 0 60px 0;
 }
 
-.bottomContainer{
-    width: 100%;
-    background-image: linear-gradient(to top left, $primary, $black);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    border-radius: 60px 0 0 0;
-
+.topContainer .App-home {
+  padding-top: 10px !important;
 }
 
-.App-home{
-    padding: 40px 120px !important;
+.bottomContainer {
+  width: 100%;
+  background-image: linear-gradient(to top left, $bg, $bg);
+  // background-image: linear-gradient(to top left, $primary, $black);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-radius: 60px 0 0 0;
 }
 
-.service-card{
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-    // background-color: rgba(0, 0, 0, 0.05);
-    border: 2px solid $primary;
-    text-align: center;
-    padding: 20px;
-    height: 100%;
+.App-home {
+  padding: 40px 120px !important;
+}
+
+.service-card {
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  // background-color: rgba(0, 0, 0, 0.05);
+  border: 2px solid $primary;
+  text-align: center;
+  padding: 20px;
+  height: 100%;
 }

@@ -3,13 +3,32 @@ import '../styles/header.scss';
 import {
     Link
 } from "react-router-dom";
+import React, {useState, useEffect} from "react"
 
 function Header({ active }) {
+
+    const [isFixed, setIsFixed] = useState(false);
+
+    function checkIsScrolled() {
+        if (window.scrollY > 10)
+            setIsFixed(true);
+        else
+            setIsFixed(false);
+    }
+
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+        window.addEventListener("scroll", () => {
+            checkIsScrolled()
+        })
+    }, [])
+
     return (
-        <nav class="navbar navbar-expand-lg header App custom-toggler">
+        <nav class={"navbar navbar-expand-lg header App custom-toggler" + ((isFixed || active === "services") ? " navbar-scrolling" : "")}>
             <div class="container-fluid">
                 <Link class="navbar-brand" to="/">
-                    <img src={IMG.Logo} alt="Logo" class="d-inline-block align-text-top Logo" />
+                    <img src={IMG.Logo} alt="Logo" class={"d-inline-block align-text-top Logo" + (isFixed ? " Logo-scrolling" : "")} />
                 </Link>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

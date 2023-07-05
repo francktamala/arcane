@@ -15,11 +15,11 @@ export default function Services() {
             <Navbar active="services" />
             <div className="App-home Service-Container" style={{ borderRadius: 0 }}>
 
-                <h1 className="txt-White" style={{ textAlign: 'center' }}>Our Services</h1>
+                <h1 className="txt-black" style={{ textAlign: 'center' }}>Our Services</h1>
                 <br />
                 <div className="row">
                     {SERVICES.map((item, index) => {
-                        return <ServiceCard key={index} {...{ ...item, isDark: true }} />
+                        return <ServiceCard key={index} {...{ ...item, isDark: false }} />
                     })}
 
                 </div>

@@ -2,6 +2,7 @@
 
 $secondary: #03318c;
 $black: #081626;
+$bg: #fcefbd;
 // $secondary: #168BF2;
 $primary: #35bdf2;
 $accent: #f24e6e;
@@ -82,6 +83,7 @@ a {
   transition: 1s ease-in-out !important;
   font-size: 0.9rem !important;
   font-weight: bold;
+  transition: .5s !important;
 }
 
 .btn-outline-primary {
@@ -90,14 +92,15 @@ a {
 }
 
 .btn-outline-primary:hover {
-  background-color: $black !important;
+  background-color: $primary !important;
+  color: $bg !important;
 }
 
 // SCROLLBAR
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 /* Track */
@@ -108,7 +111,7 @@ a {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   transition: 1s;
-  background: $accent;
+  background: $secondary;
 }
 
 /* Handle on hover */

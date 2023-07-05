@@ -17,9 +17,9 @@ export default function About() {
                 <div className="App">
                     <div className="row">
                         <div className="col-lg-8 col-md-8">
-                            <h1 className="txt-White">Who Are We?</h1>
+                            <h1 className="txt-Secondary">Who Are We?</h1>
                             <br />
-                            <h5 className="txt-White">
+                            <h5 className="txt-black">
                                 <strong>Arcane Analytics</strong> is a firm offering services in consultancy for your business needs. We focus on several aspects of business including business development, investment, project financing, business analysis and strategic management. We provide client-personal focus on your business and its aspects to ensure that these are set up for your business to grow and improve efficiency.
                             </h5>
                         </div>

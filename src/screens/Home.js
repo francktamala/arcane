@@ -19,9 +19,9 @@ function Home() {
                 <div className="App-home">
                     <div className="row">
                         <div className="col-lg-8 col-md-8">
-                            <h1 className="txt-White">The Fast Moving World!</h1>
-                            <h5 className="txt-White">
-                                In today's world that is changing so quickly, innovation and rethinking how to do business are essential components for remaining competitive and relevant. Businesses need to have a forward-thinking mindset and be open to exploring new ideas and ways if they are to embrace these notions.
+                            <h1 className="txt-Secondary">The Fast Moving World!</h1>
+                            <h5 className="txt-black">
+                                In a time that is ever-evolving, innovation and rethinking how to do business are essential components for remaining competitive and relevant. Businesses need to have a forward-thinking mindset and be open to exploring new ideas and ways if they are to embrace these notions.
                             </h5>
                         </div>
                         <div className="col-lg-4 col-md-4"></div>
@@ -53,7 +53,7 @@ function Home() {
             {/* <br /> */}
             <div className="bottomContainer">
                 <div className="App-home" style={{ textAlign: 'center' }}>
-                    <h2 className="txt-White">Are you ready to take control of your business ?</h2>
+                    <h2 className="txt-Secondary">Are you ready to take control of your business ?</h2>
                     <br />
                     <Link className="btn btn-outline-primary" to="/contact">Get In Touch</Link>
                 </div>

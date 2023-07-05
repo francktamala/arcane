@@ -19,9 +19,9 @@ export default function Contact() {
                 <div className="App">
                     <div className="row">
                         <div className="col-md-6">
-                            <h1 className="txt-White">Get In Touch.</h1>
+                            <h1 className="txt-Secondary">Get In Touch.</h1>
                             <br />
-                            <h5 className="txt-White">We'd love to hear from you. Here is how you can reach us.</h5>
+                            <h5 className="txt-black">We'd love to hear from you. Here is how you can reach us.</h5>
                         </div>
                     </div>
                 </div>
